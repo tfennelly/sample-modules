@@ -1,0 +1,28 @@
+{
+    "displayName": "Webhook (Sample)",
+    "smalllogo": "images/smalllogo.png",
+    "largelogo": "images/largelogo.png",
+    "components": [
+    {
+        "name": "sample-webhook",
+        "displayName": "Webhook (Sample)",
+        "type": "InputConnector",
+        "runtime": "com.foxweave.component.webhook.WebhookInputConnector",
+        "smalllogo": "images/smalllogo.png",
+        "largelogo": "images/largelogo.png",
+        "configUI": {
+            "html": "input-connector-ui.html",
+            "configJs": "scripts/component-config/PROPERTIES.js",
+            "viewJs": "input-connector.js"
+        },
+        "deps": [
+            {
+                "groupId": "com.foxweave",
+                "artifactId": "webhook",
+                "version": "0.1",
+                "fileName": "/lib/foxweave-components-webhook-0.1.jar"
+            }
+        ]
+    }
+]
+}

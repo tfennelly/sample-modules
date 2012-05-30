@@ -1,0 +1,29 @@
+<input class="submit" type="submit" value="Save"/>
+<table>
+    <tr>
+        <td>
+            <style type="text/css">
+                table#httpparams td.fieldName {
+                    width: 120px;
+                }
+            </style>
+            <table id="httpparams">
+                <tr>
+                    <td class="fieldName">Context Path:</td>
+                    <td><input value="/" class="validate[required] text-input" type="text" id="Webhook_context_path" size="60" title="The HTTP sub-context path on which to receive Webhook requests." /></td>
+                </tr>
+                <tr>
+                    <td class="fieldName">Webhook URL:</td>
+                    <td id="Webhook_webhookURL"></td>
+                </tr>
+                <tr>
+                    <td class="fieldName">Handshake Key:</td>
+                    <td><input value="HandshakeKey" type="text" id="Webhook_handskake_key_name" size="20" title="The Webhook Handshake Key Name." />=<input value="" type="text" id="Webhook_handskake_key_value" size="30" title="The Webhook Handshake Key Value." /></td>
+                </tr>
+                <tr>
+                    <td class="fieldName">Set Params as Payload:</td><td><input type="checkbox" value="false" id="Webhook_set_params_as_payload" title="Set the request parameters as the FoxWeave message payload (JSON)"/></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
