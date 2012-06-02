@@ -20,7 +20,7 @@
                 "groupId": "com.foxweave",
                 "artifactId": "webhook",
                 "version": "0.1",
-                "fileName": "/lib/foxweave-components-webhook-0.1.jar"
+                "fileName": "/lib/foxweave-component-webhook-0.1.jar"
             }
         ]
     }
