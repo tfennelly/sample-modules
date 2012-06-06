@@ -6,6 +6,10 @@
     <version>0.1</version>
     <name>FoxWeave Webhook Component Module Example</name>
 
+    <!--
+        All the standard (core FoxWeave) components are provided for the runtime.  You will
+        need to add any external dependencies though...
+    -->
     <dependencies>
         <dependency>
             <groupId>com.foxweave</groupId>
@@ -21,6 +25,10 @@
         </dependency>
 	</dependencies>
 
+    <!--
+        The FoxWeave API is currently in a private maven repo on foxweave.com, so we need to
+        add that repo here...
+    -->
     <repositories>
         <repository>
             <id>foxweave-releases</id>
@@ -30,6 +38,9 @@
 
     <build>
         <plugins>
+            <!--
+                Produce Java 1.6 compatible bytecode...
+            -->
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.3.2</version>
@@ -38,6 +49,10 @@
                     <target>1.6</target>
                 </configuration>
             </plugin>
+            <!--
+                Include the assembly plugin and point it to the assembly.xml file
+                in the project...
+            -->
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>2.3</version>

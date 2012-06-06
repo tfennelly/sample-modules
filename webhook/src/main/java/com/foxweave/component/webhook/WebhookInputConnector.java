@@ -19,7 +19,7 @@ import java.util.Properties;
  * (implemented in {@link WebhookRequestListener}).  {@link WebhookRequestListener} is registered in
  * the {@link #initialize()} method.
  */
-public class WebhookInputConnector extends AbstractPipelineComponent implements InputConnector, ComponentLifecycle, Configurable<Properties> {
+public class WebhookInputConnector extends AbstractPipelineComponent implements InputConnector, Configurable<Properties> {
     
     private String contextPath;
     private String handshakeKeyName;

@@ -4,11 +4,18 @@
 
     <id>module</id>
 
+    <!--
+        Produce a flat .zip file (without a base directory)...
+    -->
     <formats>
         <format>zip</format>
     </formats>
     <includeBaseDirectory>false</includeBaseDirectory>
 
+    <!--
+        Into the .zip file, include everything in the src/main/resources
+        and src/main/foxweave folders...
+    -->
     <fileSets>
         <fileSet>
             <directory>${basedir}/src/main/foxweave</directory>
@@ -20,6 +27,10 @@
         </fileSet>
     </fileSets>
 
+    <!--
+        Put the component's own .jar file into the lib folder.
+        This needs to be reflected in the foxweave-components.json 'deps' section...
+    -->
     <files>
         <file>
             <source>target/foxweave-component-webhook-0.1.jar</source>
